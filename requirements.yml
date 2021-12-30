@@ -1,0 +1,23 @@
+name: diffusercam
+channels:
+  - conda-forge
+dependencies:
+  - python=3.9
+  - pip
+  - numpy
+  - cython
+  - scipy=1.7.0
+  - jupyter
+  - matplotlib=3.4.2
+  - pylint=2.12.2
+  - black=21.11b1
+  - pre-commit
+  - click=8.0.1
+  - numba
+  - libraw
+  - pip:
+    - opencv-python
+    - optuna
+    - git+https://github.com/letmaik/rawpy.git@v0.16.0
+    - --editable ./DiffuserCam
+    - --editable .
